@@ -55,17 +55,17 @@
 
     <!-- Second Navbar -->
      
-    <nav class=" d-md-none navbar navbar-expand-lg second-nav" :class="{ visible: isScrolled && !isCollapseOpen }">
+    <nav class=" navbar navbar-expand-lg second-nav" :class="{ visible: isScrolled && !isCollapseOpen }">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
           <img src="https://www.kdrsoft.com/logo-images/52-kdrsoft-logo.webp" alt="Logo" width="200"
             class="d-inline-block align-text-top" />
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
-          aria-controls="offcanvasNavbar">
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbarr"
+          aria-controls="offcanvasNavbarr">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="offcanvas offcanvas-start" style="width: 300px;" tabindex="-1" id="offcanvasNavbar"
+        <div class="offcanvas offcanvas-start" style="width: 300px;" tabindex="-1" id="offcanvasNavbarr"
             aria-labelledby="offcanvasNavbarLabel">
             <div class="d-lg-none offcanvas-header border-bottom  d-flex justify-content-between align-items-center p-2">
               <img src="https://www.kdrsoft.com/logo-images/52-kdrsoft-logo.webp" alt="Logo" width="90"  />
@@ -174,5 +174,6 @@ export default {
 .offcanvas { 
   --bs-offcanvas-transition: transform 1s ease-in-out !important;
   --bs-offcanvas-title-line-height: 1.5;
+  height: 100vh;
 }
 </style>
